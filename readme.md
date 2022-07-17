@@ -1,0 +1,1 @@
+I know this project isn't super spectacular, but I decided to do this today to further improve my understanding of CSS grid and it's possible use cases. It's just a simple static page featuring only HTML and CSS, put together with free Unsplash images and a grayscale color palette from www.coolors.co.  

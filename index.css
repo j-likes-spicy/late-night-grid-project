@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  --color-white: #ffffff;
+  --color-light: #f8f9fa;
+  --color-lightest-gray: #e9ecef;
+  --color-light-gray: #dee2e6;
+  --color-light-mid-gray: #ced4da;
+  --color-gray: #adb5bd;
+  --color-dark-gray-1: #6c757d;
+  --color-dark-gray-2: #495057;
+  --color-dark-gray-3: #343a40;
+  --color-dark-gray-4: #212529;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-dark-gray-4);
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100vh;
+}
+
+.hero {
+  background: url(./img/bk.jpg);
+  min-height: 45vh;
+  padding: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  overflow: hidden;
+}
+
+.hero__btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.75rem;
+  text-decoration: none;
+  background: rgba(73, 80, 87, 0.88);
+  color: var(--color-white);
+}
+
+.hero__btn:hover {
+  background: var(--color-gray);
+  color: var(--color-dark-gray-4);
+}
+
+/* Typography */
+.hero__header {
+  font-size: 3rem;
+  color: var(--color-light-gray);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+  background: var(--color-dark-gray-2);
+}
+
+.cards__img {
+  width: 100%;
+  height: 16.6875rem;
+}
+
+.cards__panel {
+  border: 1px solid var(--color-white);
+  position: relative;
+}
+
+.cards__img,
+.cards__panel {
+  border-radius: 0.75rem;
+}
+
+.cards__lead {
+  position: absolute;
+  bottom: 0;
+  background: var(--color-gray);
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+.cards__lead > h3 {
+  margin-left: 1rem;
+}
+
+.hero__paragraph {
+  color: var(--color-light-mid-gray);
+  background: rgba(73, 80, 87, 0.3);
+  margin-bottom: 2.5rem;
+}
+
+.description {
+  padding: 4rem 2rem;
+  background: var(--color-light-gray);
+}
+
+.description__paragraph {
+  line-height: 1.6;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-light);
+}
